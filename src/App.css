@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .App-logo {
@@ -8,31 +10,89 @@
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.d1{
+  background-color: #f1f1f1;
+  padding: 20px;
+  margin: 20px;
+  height:90vh;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+  background: linear-gradient(45deg, #b9b0b0, #c46666 , #951ec4, #3e5436, #ae6c8d);
+}
+
+.App-header{
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  height: 99vh;
+  background-color: #1e0202;
+  font-family: Arial, sans-serif;
+  color: white;
+  font-size: 30px;
+  border-radius: 10px;
+  
+  box-shadow: 0px 0px 10px 0px rgba(189, 187, 187, 0.75);
+}
+.field{
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.welcome{
+  color: white;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+img{
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+}
+#no{
+  color: red;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#yess{
+  color: red;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#noo{
+  color: red;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#noo:hover{
+  color: rgb(108, 19, 19);
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  -webkit-transform:translateX(-115px);
+    -moz-transform:translateX(-115px);
+    -o-transform:translateX(-115px);
+    -ms-transform:translateX(-115px);
+    transform:translate5Y(-115px);
+    -webkit-transform:translateX(-115px);
+    -moz-transform:translateX(-115px);
+    -o-transform:translateX(-115px);
+    -ms-transform:translateX(-115px);
+    transform:translateX(-115px);
+}
+@media screen and (max-width: 600px){
+  img{
+    width: 200px;
+    height:200px;
+    object-fit: cover;
   }
 }
